@@ -11,7 +11,7 @@ function App() {
             return;
         }
         try {
-            const response = await axios.get(`http://localhost:6000/api/greet?name=${name}`);
+            const response = await axios.get(`http://localhost:5000/api/greet?name=${name}`);
             setMessage(response.data.message);
         } catch (error) {
             setMessage("Error fetching greeting.");
